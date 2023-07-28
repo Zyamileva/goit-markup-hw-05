@@ -354,17 +354,69 @@
                             </li>
                         </ul>
                 </div>
+                <form class="form-subscrie">
+                    <lable class="label-subscribe">
+                        <span class="form-text">Subscribe</span>
+                        <input type="text" class="input-subscribe" name="subscribe" placeholder="E-mail" autofocus>
+                    </lable>
+                    <button class="button-subscribe" type="submit">Subscribe
+                        <svg class="svg-subscribe" width="24" height="24">
+                            <use href="./images/icons.svg#icon-Frame-3">
+                            </use>
+                        </svg>
+                    </button>
+                </form>       
             </div>
         </footer>
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                <h1 class="modal-text">Leave your contacts and we will call you back</h1>
+                
+                <form class="modal-form">
+                    <fieldset  class="form-field">
+                        <label class="form-label">Name
+                            <div class="form-box">
+                                <input class="form-input" type="text" name="name" autofocus/>
+                                <svg class="form-img" width="18" hight="18">
+                                <use href="./images/icons.svg#icon-person-black-18dp"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="form-label">Phone
+                            <div class="form-box">
+                                <input class="form-input" type="tel" name="tel"/>
+                                <svg class="form-img" width="18" hight="18">
+                                    <use href="./images/icons.svg#icon-phone-black-18dp"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="form-label">Email
+                            <div class="form-box">
+                                <input class="form-input" type="email" name="email"/>
+                                <svg class="form-img" width="18" hight="18">
+                                    <use href="./images/icons.svg#icon-email-black-18dp"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="form-label">Comment
+                            <textarea class="form-textarea" name="comment" placeholder="Text input"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="form-field-checkbox">
+                        <input class="form-checkbox" type="checkbox" name="accept" value="accept" id="accept" />
+                        <label class="checkbox-label">I accept the terms and conditions of the <span class="checkbox-label-span">Privacy Policy</span></label>
+                    </fieldset>
+
+                    <button class="form-btn" type="submit">Send</button>
+                </form>
+
                 <button class="modal-btn" type="button" data-modal-close>
                     <svg class="modal-svg" width="8" height="8">
                         <use href="./images/icons.svg#icon-close-black-18dp"></use>
                     </svg>
                 </button> 
-
             </div>
         </div>
         
